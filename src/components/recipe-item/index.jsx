@@ -9,7 +9,7 @@ export default function RecipeItem({item}){
         <div>
             <span className="text-sm text-cyan-700 font-medium">{item?.publisher}</span>
             <h3 className="font-bold text-2xl truncate text-black">{item?.title}</h3>
-            <Link to={`/recipe-item/${item?.id}`} className="text-sm p-3 px-8 rounded-lg uppercase font-medium tracking-wider inline-block shadow-md bg-black text-white">Recipe details</Link>
+            <Link to={`/recipe-item/${item?.id}`} className="text-sm p-3 mt-5 px-8 rounded-lg uppercase font-medium tracking-wider inline-block shadow-md bg-black text-white">Recipe details</Link>
         </div>
     </div>
 
