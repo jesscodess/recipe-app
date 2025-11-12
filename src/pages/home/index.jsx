@@ -8,14 +8,15 @@ export default function Home(){
 
     if(loading) return <div>Loading, please wait...</div>
 
-    return <div className="py-8 container mx-auto flex flex-wrap justify-center gap-10">
+    return (<div className="py-8 container mx-auto flex flex-wrap justify-center gap-10">
         {
             recipeList && recipeList.length > 0 ? 
-            recipeList.map(item => <RecipeItem item={item}/>)
+            recipeList.map((item) => <RecipeItem item={item} />)
             
-            : <div>
+            : (<div>
                 <p className="lg:text-4x1 text-x1 text-center text-black font-extrabold">Nothing to show. Please search for something...</p>
             </div>
-        }
+        )}
     </div>
+            );
 }
